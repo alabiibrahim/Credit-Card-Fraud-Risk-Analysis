@@ -1,5 +1,29 @@
 # Fraud-Risk-Analytics-for-Credit-Card-Transactions
 
+# Table of Contents
+
+![ProjectOverview](#ProjectOverview)
+![Tool](#Tools)
+![Methodology](#Methodology)
+
+
+# ProjectOverview
+
+A financial institution is experiencing increasing fraudulent credit card activities across multiple transaction channels, merchants, and countries.
+
+The business wants to:
+
+Identify patterns associated with fraudulent transactions
+Detect high-risk customer and merchant behaviors
+Understand how fraud varies across geography, card types, transaction methods, and customer demographics
+Improve fraud monitoring and risk mitigation strategies
+
+Using SQL, the objective is to analyze transaction data and generate actionable business insights that can support fraud prevention and operational decision-making.
+
+# Tools
+
+
+# Methodology
 
 ```sql
 --bq1 : FRAUD OVERVIEW AND FINANCIAL IMPACT 
