@@ -287,4 +287,4 @@ GROUP BY [Country], [Transaction_Location]
 ORDER BY Fraudulent_Locations DESC;
 
 
-```sql
+```
