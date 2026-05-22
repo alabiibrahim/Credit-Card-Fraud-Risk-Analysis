@@ -1,7 +1,7 @@
 # Fraud-Risk-Analytics-for-Credit-Card-Transactions
 
 
-```
+```sql
 --bq1 : FRAUD OVERVIEW AND FINANCIAL IMPACT 
 
 SELECT 
@@ -260,4 +260,4 @@ GROUP BY [Country], [Transaction_Location]
 ORDER BY Fraudulent_Locations DESC;
 
 
-```
+```sql
