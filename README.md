@@ -1,10 +1,11 @@
-# Fraud-Risk-Analytics-for-Credit-Card-Transactions
+# Credit Card Fraud-Risk-Analytics
+
 
 # Table of Contents
 
-![ProjectOverview](#ProjectOverview)
-![Tool](#Tools)
-![Methodology](#Methodology)
+[ProjectOverview](#ProjectOverview)
+[Tool](#Tools)
+[Methodology](#Methodology)
 
 
 # ProjectOverview
