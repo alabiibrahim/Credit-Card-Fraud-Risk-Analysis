@@ -29,7 +29,8 @@ Using SQL, the objective is to analyze transaction data and generate actionable 
 # Methodology
 
 ```sql
---bq1 : FRAUD OVERVIEW AND FINANCIAL IMPACT 
+
+--bq1: Fraud overview and financial impact.
 
 SELECT 
 	SUM([Transaction_Amount]) AS Total_Fraud_Amount,
@@ -55,8 +56,7 @@ SELECT
 FROM credit_card_fraud_detection;
 
 
---- bq2 : HIGH RISKS TRANSACTION METHODS. TRANSACTION METHODS WITH THE HIGHEST FRAUD RATES AND FINANCIAL IMPACTS
-
+--- bq2: High risk transactions methods. Transaction methods with the highest fraud rates and finacial impacts.
 SELECT
     Transaction_Method,
     COUNT(CASE WHEN Fraudulent = 1 THEN 1 END) AS Fraud_Count,
@@ -73,7 +73,7 @@ GROUP BY Transaction_Method
 ORDER BY Fraud_Rate DESC;
 
 
---- bq3 : FRAUDULENT TRANSACTIONS BY MC. MC WITH THE HIGHEST NUMBER OF FRAUDULENT TRANSACTIONS AND THEIR FINANCIAL IMPACTS.
+--- bq3: Fraudulent transactions by MC. MC WITH THE HIGHEST NUMBER OF FRAUDULENT TRANSACTIONS AND THEIR FINANCIAL IMPACTS.
 
 SELECT 
 	[Merchant_Category],
@@ -96,7 +96,7 @@ WHERE Fraudulent = 1
 GROUP BY [Country]
 ORDER BY CountryFraud DESC;
 
---- bq5 : OVERTIME FRAUD TRENDS.
+--- bq5: OVERTIME FRAUD TRENDS.
 
 SELECT 
 	COUNT(*) AS Fraudulent_Transactions,
@@ -205,7 +205,7 @@ WHERE Fraudulent = 1 AND [Transaction_Amount] < 600
 GROUP BY [Country];
 
 
--- b9: Which merchant generates the highest of fraudulent transactions & loss?
+-- bq9: Which merchant generates the highest of fraudulent transactions & loss?
 
 SELECT  
        [Merchant_Name],
