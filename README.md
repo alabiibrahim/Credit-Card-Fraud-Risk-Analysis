@@ -10,6 +10,13 @@
 [Methodology](#Methodology)
 
 
+# Visualization
+
+![image](assets/images/c1.PNG)
+
+![image](assets/images/cc3.PNG)
+
+
 # ProjectOverview
 
 A financial institution is experiencing increasing fraudulent credit card activities across multiple transaction channels, merchants, and countries.
