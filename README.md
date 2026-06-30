@@ -62,6 +62,12 @@ The objective of this project is to build a fraud monitoring dashboard that help
 
 ## Methodology
 
+1. Review the raw dataset for preparation, standardization, data quality check and processing in SQL.
+2. Organized data into the needed categories for analysis.
+3. Built a two pages dashboard for transactions KPIs, geograpghy, time, merchant etc in Power BI. 
+4. Placed a short card title to show insights to what happen on each charts.
+5. Gave recommendations based on insights from data to be used for strategic business decision.
+
 ```sql
 
 --bq1: Fraud overview and financial impact.
@@ -326,7 +332,6 @@ ORDER BY Fraudulent_Locations DESC;
 ```
 
 ---
----
 
 ## Tools
 
@@ -339,10 +344,12 @@ ORDER BY Fraudulent_Locations DESC;
 
 ## Dashboard
 
-**Page 1 - Transaction & Merchant Overview**
+**Page 1 - Transaction & Merchant Overview.**
+
 ![image](assets/images/c1.PNG)
 
-**Page 2 - Demographics, Time & Geography.
+**Page 2 - Demographics, Time & Geography.**
+
 ![image](assets/images/cc3.PNG)
 
 ---
@@ -387,4 +394,4 @@ ORDER BY Fraudulent_Locations DESC;
 
 - "Old" and "Very Old" age groups are the most affected by fraud. This group may benefit from extra education on fraud prevention, simplified fraud reporting tools, or proactive alerts when unusual activity is detected on their accounts.
 
-- These three days consistently show higher fraud activity. If fraud monitoring teams have flexible staffing, consider increasing coverage on these specific days.
+- Watch these three days (Fridays, Mondays & Sundays) consistently show higher fraud activity. If fraud monitoring teams have flexible staffing, consider increasing coverage on these specific days.
