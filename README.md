@@ -3,20 +3,16 @@
 
 # Table of Contents
 
-- [Objective](#Objective)
-- [Questions](#Questions)
-- [Tools](#Tools)
-- [Methodology](#Methodology)
-- [Dashboard](#Dashboard)
-- [Insights](#Insights)
-- [Recommendations](#Recommendations)
+- [Overview](#overview)
+- [Data Source](#data-source)
+- [Objective](#objective)
+- [Questions](#questions)
+- [Methodology](#methodology)
+- [Tools](#tools)
+- [Dashboard](#dashboard)
+- [Insights](#insights)
+- [Recommendations](#recommendations)
 
-
-# Visualization
-
-![image](assets/images/c1.PNG)
-
-![image](assets/images/cc3.PNG)
 
 # Objective
 
@@ -37,49 +33,6 @@ This is a Power BI dashboard that tracks credit card fraud across 300 transactio
 - Average fraud transaction: $496
 
 ---
-
-## Insights
-
-- Credit cards have the highest fraud share at 34.16%. Debit and Prepaid cards are close behind, both around 32.92%. All three card types are almost equally risky, none of them stands out as safe.
-
-- Travel has the highest number of fraud cases (36), but Food & Beverage has the highest fraud amount ($17K). This means Travel fraud happens more often, but Food & Beverage fraud costs more per case.
-
-- Shell tops the list at 14.91% of all fraud, followed by Starbucks (13.66%) and Costco (12.42%). These are everyday, well-known brands, not unusual or suspicious-looking merchants. This shows fraud often happens in normal, regular spending, not just in rare or risky purchases.
-
-- ATM Withdrawal is the riskiest method, with both the highest fraud count (59 cases) and the highest fraud amount ($29K). Online and In-Store methods have lower fraud numbers in comparison.
-
-- High Value transactions have the highest fraud amount at $33K, followed by Low Value ($27K) and Mid Value ($21K).
-
-- Fraud is almost evenly spread across Male (34.16%), Female (32.92%), and Non-Binary (32.92%) customers. Gender does not appear to be a strong fraud indicator on its own.
-
-- "Old" customers have both the highest fraud count (48) and the highest fraud amount ($29K), followed by "Very Old" (45 cases, $20K). Older age groups are clearly the most targeted.
-
-- Late Night has both the highest fraud count (52) and fraud amount ($24K), followed by Morning (36 cases). Fraud drops steadily through the day and is lowest in the Early Morning.
-
-- Friday, Monday, and Sunday have the highest fraud counts (27 each), but Monday has the highest fraud amount ($15K). Fraud dips noticeably mid-week (Tuesday to Thursday).
-
-- The USA has both the highest fraud count (22) and fraud amount ($11K) compared to other regions shown on the map.
-
-- January has both the highest fraud count (23) and fraud amount ($13K), making it the riskiest month in the data.
-
-- 2023 has the highest fraud count (81), while 2022 has the highest fraud amount ($41K). This shows fraud cases went up in 2023, but the average loss per case was higher in 2022.
-
-- High Balance accounts are by far the biggest concern, 141 fraud cases and $70,028 in losses. That is 87.6% of total fraud transactions and about 88% of total fraud losses, even though Low Balance and Medium Balance accounts only added up to $9,835 combined.
-
----
-
-## Recommendations
-
-- ATM Withdrawal has the highest fraud count and the highest fraud amount of any transaction method. This should be the first place to add extra security steps, such as additional verification for large or late-night withdrawals.
-
-- High Balance accounts make up the large majority of both fraud cases and fraud losses. These accounts should get enhanced monitoring, such as real-time alerts for unusual activity or stricter approval steps for large transactions.
-
-- Late Night has the highest fraud count and amount of any time period. Consider adding extra fraud checks, automatic transaction holds, or real-time alerts specifically for transactions made during these hours.
-
-- "Old" and "Very Old" age groups are the most affected by fraud. This group may benefit from extra education on fraud prevention, simplified fraud reporting tools, or proactive alerts when unusual activity is detected on their accounts.
-
-- These three days consistently show higher fraud activity. If fraud monitoring teams have flexible staffing, consider increasing coverage on these specific days.
-
 ---
 
 
@@ -361,3 +314,60 @@ ORDER BY Fraudulent_Locations DESC;
 
 
 ```
+
+## Tools
+
+|Tools | Purpose|
+|---|---|
+|SQL | Data Cleaning, Transformation |
+| Power BI | DAX measures, Dynamic visualization|
+
+
+## Dashboard
+
+![image](assets/images/c1.PNG)
+
+![image](assets/images/cc3.PNG)
+
+
+## Insights
+
+- Credit cards have the highest fraud share at 34.16%. Debit and Prepaid cards are close behind, both around 32.92%. All three card types are almost equally risky, none of them stands out as safe.
+
+- Travel has the highest number of fraud cases (36), but Food & Beverage has the highest fraud amount ($17K). This means Travel fraud happens more often, but Food & Beverage fraud costs more per case.
+
+- Shell tops the list at 14.91% of all fraud, followed by Starbucks (13.66%) and Costco (12.42%). These are everyday, well-known brands, not unusual or suspicious-looking merchants. This shows fraud often happens in normal, regular spending, not just in rare or risky purchases.
+
+- ATM Withdrawal is the riskiest method, with both the highest fraud count (59 cases) and the highest fraud amount ($29K). Online and In-Store methods have lower fraud numbers in comparison.
+
+- High Value transactions have the highest fraud amount at $33K, followed by Low Value ($27K) and Mid Value ($21K).
+
+- Fraud is almost evenly spread across Male (34.16%), Female (32.92%), and Non-Binary (32.92%) customers. Gender does not appear to be a strong fraud indicator on its own.
+
+- "Old" customers have both the highest fraud count (48) and the highest fraud amount ($29K), followed by "Very Old" (45 cases, $20K). Older age groups are clearly the most targeted.
+
+- Late Night has both the highest fraud count (52) and fraud amount ($24K), followed by Morning (36 cases). Fraud drops steadily through the day and is lowest in the Early Morning.
+
+- Friday, Monday, and Sunday have the highest fraud counts (27 each), but Monday has the highest fraud amount ($15K). Fraud dips noticeably mid-week (Tuesday to Thursday).
+
+- The USA has both the highest fraud count (22) and fraud amount ($11K) compared to other regions shown on the map.
+
+- January has both the highest fraud count (23) and fraud amount ($13K), making it the riskiest month in the data.
+
+- 2023 has the highest fraud count (81), while 2022 has the highest fraud amount ($41K). This shows fraud cases went up in 2023, but the average loss per case was higher in 2022.
+
+- High Balance accounts are by far the biggest concern, 141 fraud cases and $70,028 in losses. That is 87.6% of total fraud transactions and about 88% of total fraud losses, even though Low Balance and Medium Balance accounts only added up to $9,835 combined.
+
+---
+
+## Recommendations
+
+- ATM Withdrawal has the highest fraud count and the highest fraud amount of any transaction method. This should be the first place to add extra security steps, such as additional verification for large or late-night withdrawals.
+
+- High Balance accounts make up the large majority of both fraud cases and fraud losses. These accounts should get enhanced monitoring, such as real-time alerts for unusual activity or stricter approval steps for large transactions.
+
+- Late Night has the highest fraud count and amount of any time period. Consider adding extra fraud checks, automatic transaction holds, or real-time alerts specifically for transactions made during these hours.
+
+- "Old" and "Very Old" age groups are the most affected by fraud. This group may benefit from extra education on fraud prevention, simplified fraud reporting tools, or proactive alerts when unusual activity is detected on their accounts.
+
+- These three days consistently show higher fraud activity. If fraud monitoring teams have flexible staffing, consider increasing coverage on these specific days.
