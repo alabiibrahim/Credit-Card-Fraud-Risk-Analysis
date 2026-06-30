@@ -49,6 +49,20 @@ Improve fraud monitoring and risk mitigation strategies
 
 Using SQL, the objective is to analyze transaction data and generate actionable business insights that can support fraud prevention and operational decision-making.
 
+## Questions 
+
+1. Fraud overview and financial impact.
+2. High risk transactions methods. Transaction methods with the highest fraud rates and finacial impacts.
+3. Fraudulent transactions by Merchant Categories. Merchant categories with the highest number of fraudulent transaction and their financail impacts.
+4. Country level fraud analysis.
+5. Overtime fraud trends.
+6. Which card types are most vulnerable to frudulent transactions?
+7. Which customer demographics are associated with higher fraud exposure?
+8. Do fraudulent transactions tend to involve higher transaction amounts?
+9. Which merchant generates the highest of fraudulent transactions & loss?
+10. Is there a relationship between account balance and fraudulent transactions?
+11. Are there specific times of day when fraudulent transactions are more likely to occur?
+12. Which transaction locations are associated with the highest fraud occurrence?
 
 
 ## Methodology
@@ -110,7 +124,7 @@ FROM dbo.credit_card_fraud_detection
 WHERE Fraudulent = 1
 GROUP BY [Merchant_Category];
 
---- bq4 : COUNTRY LEVEL FRAUD ANALYSIS.	
+--- bq4 : Country level fraud analysis.	
 
 SELECT [Country],
 	COUNT(*) AS CountryFraud,
@@ -121,7 +135,7 @@ WHERE Fraudulent = 1
 GROUP BY [Country]
 ORDER BY CountryFraud DESC;
 
---- bq5: OVERTIME FRAUD TRENDS.
+--- bq5: Overtime fraud trends.
 
 SELECT 
 	COUNT(*) AS Fraudulent_Transactions,
@@ -303,7 +317,7 @@ FROM T2
 ORDER BY Fraudulent_Transactions DESC;
 
 
---bq12: which transaction locations are associated with the highest fraud occurrence?
+--bq12: Which transaction locations are associated with the highest fraud occurrence?
 
 SELECT [Country], [Transaction_Location],
         COUNT(*) AS Fraudulent_Locations,
