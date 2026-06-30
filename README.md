@@ -22,11 +22,12 @@ This is a Power BI dashboard that tracks credit card fraud across 300 transactio
 
 The dataset used in this project is a practice dataset containing 300 simulated credit card transactions, including details such as card type, merchant, transaction method, transaction amount, customer demographics (age group, gender), account balance category, and timestamps (date, time of day, day of week). It is not real customer data, and was used purely for the purpose of practicing dashboard design and fraud analysis. ![Data](https://github.com/alabiibrahim/Credit-Card-Fraud-Risk-Analysis/blob/main/assets/dataset/credit_card_fraud_detection.csv)
 
-
+---
 
 ## Objective
 
 The objective of this project is to build a fraud monitoring dashboard that helps identify where, when, and to whom credit card fraud is most likely to happen. The dashboard is designed to support a fraud risk analyst in spotting patterns across transaction types, merchants, demographics, and time, so that fraud prevention efforts can be focused where they matter most.
+
 ---
 
 ## Key Numbers
@@ -57,6 +58,7 @@ The objective of this project is to build a fraud monitoring dashboard that help
 11. Are there specific times of day when fraudulent transactions are more likely to occur?
 12. Which transaction locations are associated with the highest fraud occurrence?
 
+---
 
 ## Methodology
 
@@ -323,6 +325,9 @@ ORDER BY Fraudulent_Locations DESC;
 
 ```
 
+---
+---
+
 ## Tools
 
 |Tools | Purpose|
@@ -330,13 +335,17 @@ ORDER BY Fraudulent_Locations DESC;
 |SQL | Data Cleaning, Transformation |
 | Power BI | DAX measures, Dynamic visualization|
 
+---
 
 ## Dashboard
 
+**Page 1 - Transaction & Merchant Overview**
 ![image](assets/images/c1.PNG)
 
+**Page 2 - Demographics, Time & Geography.
 ![image](assets/images/cc3.PNG)
 
+---
 
 ## Insights
 
