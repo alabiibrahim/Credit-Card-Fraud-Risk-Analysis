@@ -1,5 +1,6 @@
 # Credit Card Fraud Risk Overview 
 
+![GIF](assets/images/ccgif.gif)
 
 # Table of Contents
 
