@@ -1,13 +1,15 @@
-# Credit Card Fraud-Risk-Analytics
+# Credit Card Fraud Risk Overview 
 
 
 # Table of Contents
 
-[ProjectOverview](#ProjectOverview)
-
-[Tool](#Tools)
-
-[Methodology](#Methodology)
+- [Objective](#Objective)
+- [Questions](#Questions)
+- [Tools](#Tools)
+- [Methodology](#Methodology)
+- [Dashboard](#Dashboard)
+- [Insights](#Insights)
+- [Recommendations](#Recommendations)
 
 
 # Visualization
@@ -16,8 +18,8 @@
 
 ![image](assets/images/cc3.PNG)
 
-# Objectives
-# Credit Card Fraud Risk Overview — Insights & Recommendations
+# Objective
+
 
 ## About This Project
 
