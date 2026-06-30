@@ -30,7 +30,7 @@ The objective of this project is to build a fraud monitoring dashboard that help
 
 ---
 
-## Key Numbers
+## KPIs
 
 - Total transactions: 300
 - Total transaction amount: $150.57K
@@ -40,8 +40,6 @@ The objective of this project is to build a fraud monitoring dashboard that help
 - Average fraud transaction: $496
 
 ---
----
-
 
 ## Questions 
 
