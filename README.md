@@ -13,16 +13,20 @@
 - [Insights](#insights)
 - [Recommendations](#recommendations)
 
+## Overview
+
+This is a Power BI dashboard that tracks credit card fraud across 300 transactions. It looks at fraud by card type, merchant, payment method, time of day, customer age, account balance, and location. The goal is simple is to analyze transaction data and generate actionable business insights that can support fraud prevention and operational decision-making.
+
+
 ## Data Source
-![Data](#Data)
+
+The dataset used in this project is a practice dataset containing 300 simulated credit card transactions, including details such as card type, merchant, transaction method, transaction amount, customer demographics (age group, gender), account balance category, and timestamps (date, time of day, day of week). It is not real customer data, and was used purely for the purpose of practicing dashboard design and fraud analysis. ![Data](#Data)
+
+
 
 ## Objective
 
-
-## About This Project
-
-This is a Power BI dashboard that tracks credit card fraud across 300 transactions. It looks at fraud by card type, merchant, payment method, time of day, customer age, account balance, and location. The goal is simple: find out where fraud is happening the most, and figure out what can be done about it.
-
+The objective of this project is to build a fraud monitoring dashboard that helps identify where, when, and to whom credit card fraud is most likely to happen. The dashboard is designed to support a fraud risk analyst in spotting patterns across transaction types, merchants, demographics, and time, so that fraud prevention efforts can be focused where they matter most.
 ---
 
 ## Key Numbers
