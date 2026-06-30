@@ -20,7 +20,7 @@ This is a Power BI dashboard that tracks credit card fraud across 300 transactio
 
 ## Data Source
 
-The dataset used in this project is a practice dataset containing 300 simulated credit card transactions, including details such as card type, merchant, transaction method, transaction amount, customer demographics (age group, gender), account balance category, and timestamps (date, time of day, day of week). It is not real customer data, and was used purely for the purpose of practicing dashboard design and fraud analysis. [Data](https://github.com/alabiibrahim/Credit-Card-Fraud-Risk-Analysis/blob/main/assets/dataset/credit_card_fraud_detection.csv)
+The dataset used in this project is a practice dataset containing 300 simulated credit card transactions, including details such as card type, merchant, transaction method, transaction amount, customer demographics (age group, gender), account balance category, and timestamps (date, time of day, day of week). It is not real customer data, and was used purely for the purpose of practicing dashboard design and fraud analysis. [Data](assets/dataset/credit_card_fraud_detection.csv)
 
 ---
 
