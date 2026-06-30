@@ -49,10 +49,9 @@ Improve fraud monitoring and risk mitigation strategies
 
 Using SQL, the objective is to analyze transaction data and generate actionable business insights that can support fraud prevention and operational decision-making.
 
-# Tools
 
 
-# Methodology
+## Methodology
 
 ```sql
 
@@ -157,11 +156,11 @@ SELECT
     [Transaction_Location],
     [User_Gender],
     CASE 
-        WHEN [User_Age] BETWEEN 18 AND 25 THEN 'Under 25'
-        WHEN [User_Age] BETWEEN 26 AND 35 THEN 'Young Age'
+        WHEN [User_Age] BETWEEN 18 AND 25 THEN 'Under 30'
+        WHEN [User_Age] BETWEEN 26 AND 35 THEN ''
         WHEN [User_Age] BETWEEN 36 AND 45 THEN 'Middle Age'
-        WHEN [User_Age] BETWEEN 46 AND 65 THEN 'Old Age'
-        ELSE 'Very Old Age'
+        WHEN [User_Age] BETWEEN 46 AND 65 THEN 'Old '
+        ELSE 'Very Old '
         END AS Age_Group,
     COUNT(*) AS Fraudulent_Transactions,
     ROUND(SUM([Transaction_Amount]), 2) AS Total_Fraud_Amount
