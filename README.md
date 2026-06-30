@@ -16,6 +16,100 @@
 
 ![image](assets/images/cc3.PNG)
 
+# Objectives
+# Credit Card Fraud Risk Overview — Insights & Recommendations
+
+## About This Project
+
+This is a Power BI dashboard that tracks credit card fraud across 300 transactions. It looks at fraud by card type, merchant, payment method, time of day, customer age, account balance, and location. The goal is simple: find out where fraud is happening the most, and figure out what can be done about it.
+
+---
+
+## Key Numbers
+
+- Total transactions: 300
+- Total transaction amount: $150.57K
+- Total fraud transactions: 161
+- Fraud rate: 53.67%
+- Total fraud loss: $79.86K
+- Average fraud transaction: $496
+
+---
+
+## What the Data Shows
+
+### 1. Card Type
+Credit cards have the highest fraud share at 34.16%. Debit and Prepaid cards are close behind, both around 32.92%. All three card types are almost equally risky — none of them stands out as "safe."
+
+### 2. Merchant Category
+Travel has the highest number of fraud cases (36), but Food & Beverage has the highest fraud amount ($17K). This means Travel fraud happens more often, but Food & Beverage fraud costs more per case.
+
+### 3. Top Merchants by Fraud
+Shell tops the list at 14.91% of all fraud, followed by Starbucks (13.66%) and Costco (12.42%). These are everyday, well-known brands — not unusual or suspicious-looking merchants. This shows fraud often happens in normal, regular spending, not just in rare or risky purchases.
+
+### 4. Transaction Method
+ATM Withdrawal is the riskiest method, with both the highest fraud count (59 cases) and the highest fraud amount ($29K). Online and In-Store methods have lower fraud numbers in comparison.
+
+### 5. Transaction Value Tier
+High Value transactions have the highest fraud amount at $33K, followed by Low Value ($27K) and Mid Value ($21K).
+
+### 6. Gender
+Fraud is almost evenly spread across Male (34.16%), Female (32.92%), and Non-Binary (32.92%) customers. Gender does not appear to be a strong fraud indicator on its own.
+
+### 7. Age Group
+"Old" customers have both the highest fraud count (48) and the highest fraud amount ($29K), followed by "Very Old" (45 cases, $20K). Older age groups are clearly the most targeted.
+
+### 8. Time of Day
+Late Night has both the highest fraud count (52) and fraud amount ($24K), followed by Morning (36 cases). Fraud drops steadily through the day and is lowest in the Early Morning.
+
+### 9. Day of Week
+Friday, Monday, and Sunday have the highest fraud counts (27 each), but Monday has the highest fraud amount ($15K). Fraud dips noticeably mid-week (Tuesday to Thursday).
+
+### 10. Geography
+The USA has both the highest fraud count (22) and fraud amount ($11K) compared to other regions shown on the map.
+
+### 11. Month
+January has both the highest fraud count (23) and fraud amount ($13K), making it the riskiest month in the data.
+
+### 12. Year
+2023 has the highest fraud count (81), while 2022 has the highest fraud amount ($41K). This shows fraud cases went up in 2023, but the average loss per case was higher in 2022.
+
+### 13. Account Balance
+High Balance accounts are by far the biggest concern — 141 fraud cases and $70,028 in losses. That is 87.6% of total fraud transactions and about 88% of total fraud losses, even though Low Balance and Medium Balance accounts only added up to $9,835 combined.
+
+---
+
+## Recommendations
+
+### 2. Set up stronger checks for ATM withdrawals
+ATM Withdrawal has the highest fraud count and the highest fraud amount of any transaction method. This should be the first place to add extra security steps, such as additional verification for large or late-night withdrawals.
+
+### 3. Add extra protection for High Balance accounts
+High Balance accounts make up the large majority of both fraud cases and fraud losses. These accounts should get enhanced monitoring, such as real-time alerts for unusual activity or stricter approval steps for large transactions.
+
+### 4. Increase monitoring during Late Night hours
+Late Night has the highest fraud count and amount of any time period. Consider adding extra fraud checks, automatic transaction holds, or real-time alerts specifically for transactions made during these hours.
+
+### 5. Pay closer attention to older customers
+"Old" and "Very Old" age groups are the most affected by fraud. This group may benefit from extra education on fraud prevention, simplified fraud reporting tools, or proactive alerts when unusual activity is detected on their accounts.
+
+### 6. Watch Mondays, Fridays, and Sundays more closely
+These three days consistently show higher fraud activity. If fraud monitoring teams have flexible staffing, consider increasing coverage on these specific days.
+
+### 7. Track fraud trends over time, not just by year
+The dashboard compares 2022 and 2023 but does not show a continuous trend line. Adding a month-by-month or quarter-by-quarter trend view would make it easier to see whether fraud prevention efforts are actually working over time.
+
+### 8. Look for combined risk patterns
+Right now each factor (age, time, balance, method) is shown separately. The biggest risk is likely where several high-risk factors overlap — for example, a High Balance account making an ATM withdrawal late at night. Building a combined risk view would help prioritize the highest-risk transactions for review.
+
+### 9. Add a comparison point to every key number
+Numbers like the 53.67% fraud rate and $79.86K fraud loss are shown without anything to compare them to. Adding a target rate, an industry average, or a previous period's number would help anyone reading the dashboard understand whether the situation is improving, staying the same, or getting worse.
+
+---
+
+## Note on the Data
+
+The 53.67% fraud rate in this dataset is unusually high compared to real-world fraud rates, which are typically well below 1%. This suggests the dataset used for this project is a sample or practice dataset, not real transaction data. This project was built for portfolio and learning purposes to demonstrate dashboard design, data analysis, and insight-writing skills.
 
 # ProjectOverview
 
